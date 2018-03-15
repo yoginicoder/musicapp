@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/song_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="26sp"
+        tools:text="lutti"/>
+
+    <TextView
+        android:id="@+id/artist_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="26sp"
+        tools:text="one"/>
+
+</LinearLayout>

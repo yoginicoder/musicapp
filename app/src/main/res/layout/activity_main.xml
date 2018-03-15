@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.android.projectthreemusic.MainActivity">
+
+    <TextView
+        android:id="@+id/metal"
+        style="@style/CategoryStyle"
+        android:background="@color/category_metal"
+        android:text="@string/category_metal" />
+
+    <TextView
+        android:id="@+id/rock"
+        style="@style/CategoryStyle"
+        android:background="@color/category_rock"
+        android:text="@string/category_rock" />
+
+    <!--//comment-->
+    <TextView
+        android:id="@+id/punk"
+        style="@style/CategoryStyle"
+        android:background="@color/category_punk"
+        android:text="@string/category_punk" />
+
+
+
+</LinearLayout>

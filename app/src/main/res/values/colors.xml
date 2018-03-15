@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#444444</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#1e1e1e</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#000000</color>
+
+    <!-- Background color for the metal category -->
+    <color name="category_metal">#2e2e2e</color>
+
+    <!-- Background color for the rock members category -->
+    <color name="category_rock">#1aabb0</color>
+
+    <!-- Background color for the punk category -->
+    <color name="category_punk">#c42e4e</color>
+
+</resources>

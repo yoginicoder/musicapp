@@ -1,0 +1,14 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Music Player</string>
+
+
+    <!-- Category name for the music type [CHAR LIMIT=20] -->
+    <string name="category_punk">Punk</string>
+
+    <!-- Category name for the music type [CHAR LIMIT=20] -->
+    <string name="category_metal">Metal</string>
+
+    <!-- Category name for the music type [CHAR LIMIT=20] -->
+    <string name="category_rock">Rock</string>
+</resources>
