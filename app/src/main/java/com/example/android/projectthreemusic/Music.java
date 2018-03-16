@@ -5,16 +5,16 @@ package com.example.android.projectthreemusic;
  */
 
 
-public class Song {
+public class Music {
 
-    //default translation (any language a user knows / has set / is using)
+    //artist name
     private String mArtistName;
 
-    //miwok translation
+    //song name
     private String mSongName;
 
-    // create Song object
-    public Song(String artistName, String songName) {
+    // create Music object
+    public Music(String artistName, String songName) {
         mArtistName = artistName;
         mSongName = songName;
     }
@@ -24,7 +24,7 @@ public class Song {
         return mArtistName;
     }
 
-    //get Song Name
+    //get Music Name
     public String getSongName() {
         return mSongName;
     }

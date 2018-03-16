@@ -19,14 +19,14 @@ public class PunkActivity extends AppCompatActivity {
         setContentView(R.layout.genre_list);
 
 
-        ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Ramones", "Blitzkrieg Bop"));
-        songs.add(new Song("Black Flag", "Rise Above") );
-        songs.add(new Song("Green Day", "Basket Case"));
-        songs.add(new Song("Sex Pistols", "God Save The Queen"));
-        songs.add(new Song("Dead Kennedys","Holiday in Cambodia"));
+        ArrayList<Music> songs = new ArrayList<Music>();
+        songs.add(new Music("Ramones", "Blitzkrieg Bop"));
+        songs.add(new Music("Black Flag", "Rise Above") );
+        songs.add(new Music("Green Day", "Basket Case"));
+        songs.add(new Music("Sex Pistols", "God Save The Queen"));
+        songs.add(new Music("Dead Kennedys","Holiday in Cambodia"));
 
-        SongAdapter adapter = new SongAdapter(this, songs);
+        MusicAdapter adapter = new MusicAdapter(this, songs);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

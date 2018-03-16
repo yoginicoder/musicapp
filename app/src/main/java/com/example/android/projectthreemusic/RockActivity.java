@@ -17,14 +17,14 @@ public class RockActivity extends AppCompatActivity {
         setContentView(R.layout.genre_list);
 
 
-        ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Nirvana", "Smells Like Teen Spirit"));
-        songs.add(new Song("Boston", "More Than a Feeling") );
-        songs.add(new Song("Queen", "Bohemian Rhapsody"));
-        songs.add(new Song("Deep Purple", "Smoke On The Water"));
-        songs.add(new Song("AC/AD","Thunderstruck"));
+        ArrayList<Music> songs = new ArrayList<Music>();
+        songs.add(new Music("Nirvana", "Smells Like Teen Spirit"));
+        songs.add(new Music("Boston", "More Than a Feeling") );
+        songs.add(new Music("Queen", "Bohemian Rhapsody"));
+        songs.add(new Music("Deep Purple", "Smoke On The Water"));
+        songs.add(new Music("AC/AD","Thunderstruck"));
 
-        SongAdapter adapter = new SongAdapter(this, songs);
+        MusicAdapter adapter = new MusicAdapter(this, songs);
 
         ListView listView = (ListView) findViewById(R.id.list);
 

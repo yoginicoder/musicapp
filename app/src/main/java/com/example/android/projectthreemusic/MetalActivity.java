@@ -18,15 +18,15 @@ public class MetalActivity extends AppCompatActivity {
         setContentView(R.layout.genre_list);
 
 
-        ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("Iron Maiden", "Fear of the Dark"));
-        songs.add(new Song("Pantera", "Cemetery Gates") );
-        songs.add(new Song("Metallica", "Enter Sandman"));
-        songs.add(new Song("Guns 'N Roses", "Welcome to the Jungle"));
-        songs.add(new Song("Tool","Schism"));
+        ArrayList<Music> songs = new ArrayList<Music>();
+        songs.add(new Music("Iron Maiden", "Fear of the Dark"));
+        songs.add(new Music("Pantera", "Cemetery Gates") );
+        songs.add(new Music("Metallica", "Enter Sandman"));
+        songs.add(new Music("Guns 'N Roses", "Welcome to the Jungle"));
+        songs.add(new Music("Tool","Schism"));
 
 
-        SongAdapter adapter = new SongAdapter(this, songs);
+        MusicAdapter adapter = new MusicAdapter(this, songs);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
