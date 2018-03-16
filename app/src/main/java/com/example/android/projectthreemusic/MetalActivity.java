@@ -19,19 +19,11 @@ public class MetalActivity extends AppCompatActivity {
 
 
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("one", "lutti"));
-        songs.add(new Song("two", "otiiko") );
-        songs.add(new Song("three", "tolookosu"));
-        songs.add(new Song("four", "oyyisa"));
-        songs.add(new Song("five","massokka"));
-        songs.add(new Song("six", "temmokka"));
-        songs.add(new Song("seven", "kenekaku"));
-        songs.add(new Song("eight", "kawinta"));
-        songs.add(new Song("nine"," wo’e"));
-        songs.add(new Song("ten", "na’aacha"));
-
-
-
+        songs.add(new Song("Iron Maiden", "Fear of the Dark"));
+        songs.add(new Song("Pantera", "Cemetery Gates") );
+        songs.add(new Song("Metallica", "Enter Sandman"));
+        songs.add(new Song("Guns 'N Roses", "Welcome to the Jungle"));
+        songs.add(new Song("Tool","Schism"));
 
 
         SongAdapter adapter = new SongAdapter(this, songs);

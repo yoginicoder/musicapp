@@ -18,16 +18,11 @@ public class RockActivity extends AppCompatActivity {
 
 
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("father", "әpә"));
-        songs.add(new Song("mother", "әṭa") );
-        songs.add(new Song("son", "angsi"));
-        songs.add(new Song("daughter", "tune"));
-        songs.add(new Song("older brother","taachi"));
-        songs.add(new Song("younger brother", "chalitti"));
-        songs.add(new Song("older sister", "teṭe"));
-        songs.add(new Song("younger sister", "kolliti"));
-        songs.add(new Song("grandmother", "ama"));
-        songs.add(new Song("grandfather", "paapa"));
+        songs.add(new Song("Nirvana", "Smells Like Teen Spirit"));
+        songs.add(new Song("Boston", "More Than a Feeling") );
+        songs.add(new Song("Queen", "Bohemian Rhapsody"));
+        songs.add(new Song("Deep Purple", "Smoke On The Water"));
+        songs.add(new Song("AC/AD","Thunderstruck"));
 
         SongAdapter adapter = new SongAdapter(this, songs);
 

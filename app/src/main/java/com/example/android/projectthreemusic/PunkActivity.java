@@ -20,14 +20,11 @@ public class PunkActivity extends AppCompatActivity {
 
 
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("red", "weṭeṭṭi"));
-        songs.add(new Song("green", "chokokki") );
-        songs.add(new Song("brown", "ṭakaakki"));
-        songs.add(new Song("gray", "ṭopoppi"));
-        songs.add(new Song("black","kululli"));
-        songs.add(new Song("white", "kelelli"));
-        songs.add(new Song("dusty yellow", "ṭopiisә"));
-        songs.add(new Song("mustard yellow", "chiwiiṭә"));
+        songs.add(new Song("Ramones", "Blitzkrieg Bop"));
+        songs.add(new Song("Black Flag", "Rise Above") );
+        songs.add(new Song("Green Day", "Basket Case"));
+        songs.add(new Song("Sex Pistols", "God Save The Queen"));
+        songs.add(new Song("Dead Kennedys","Holiday in Cambodia"));
 
         SongAdapter adapter = new SongAdapter(this, songs);
 

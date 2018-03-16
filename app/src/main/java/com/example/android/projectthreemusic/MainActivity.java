@@ -35,50 +35,50 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the numbers category
-        ImageButton numbers = (ImageButton) findViewById(R.id.metal);
+        ImageButton metalVar = (ImageButton) findViewById(R.id.metal);
 
         // Set a click listener on that View
-        numbers.setOnClickListener(new View.OnClickListener() {
+        metalVar.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link MetalActivity}
-                Intent numbersIntent = new Intent(MainActivity.this, MetalActivity.class);
+                Intent metalIntent = new Intent(MainActivity.this, MetalActivity.class);
 
                 // Start the new activity
-                startActivity(numbersIntent);
+                startActivity(metalIntent);
             }
         });
 
         // Find the View that shows the family category
-        ImageButton family = (ImageButton) findViewById(R.id.rock);
+        ImageButton rockVar = (ImageButton) findViewById(R.id.rock);
 
         // Set a click listener on that View
-        family.setOnClickListener(new View.OnClickListener() {
+        rockVar.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link RockActivity}
-                Intent familyIntent = new Intent(MainActivity.this, RockActivity.class);
+                Intent rockIntent = new Intent(MainActivity.this, RockActivity.class);
 
                 // Start the new activity
-                startActivity(familyIntent);
+                startActivity(rockIntent);
             }
         });
 
         // Find the View that shows the colors category
-        ImageButton colors = (ImageButton) findViewById(R.id.punk);
+        ImageButton punkVar = (ImageButton) findViewById(R.id.punk);
 
         // Set a click listener on that View
-        colors.setOnClickListener(new View.OnClickListener() {
+        punkVar.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the colors category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link PunkActivity}
-                Intent colorsIntent = new Intent(MainActivity.this, PunkActivity.class);
+                Intent punkIntent = new Intent(MainActivity.this, PunkActivity.class);
 
                 // Start the new activity
-                startActivity(colorsIntent);
+                startActivity(punkIntent);
             }
         });
 
