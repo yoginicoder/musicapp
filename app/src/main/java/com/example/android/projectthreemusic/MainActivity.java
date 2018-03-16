@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the numbers category
-        TextView numbers = (TextView) findViewById(R.id.metal);
+        ImageButton numbers = (ImageButton) findViewById(R.id.metal);
 
         // Set a click listener on that View
         numbers.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the family category
-        TextView family = (TextView) findViewById(R.id.rock);
+        ImageButton family = (ImageButton) findViewById(R.id.rock);
 
         // Set a click listener on that View
         family.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the colors category
-        TextView colors = (TextView) findViewById(R.id.punk);
+        ImageButton colors = (ImageButton) findViewById(R.id.punk);
 
         // Set a click listener on that View
         colors.setOnClickListener(new View.OnClickListener() {
