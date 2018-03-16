@@ -17,9 +17,9 @@ import java.util.ArrayList;
  * Created by gp on 14/03/2018.
  */
 
-public class SongAdapter extends ArrayAdapter<Song> {
+public class MusicAdapter extends ArrayAdapter<Music> {
 
-    public SongAdapter(Activity context, ArrayList<Song> songs) {
+    public MusicAdapter(Activity context, ArrayList<Music> songs) {
         super(context, 0, songs);
     }
 
@@ -31,13 +31,13 @@ public class SongAdapter extends ArrayAdapter<Song> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        Song currentSong = getItem(position);
+        Music currentSong = getItem(position);
 
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.song_name_text_view);
-        miwokTextView.setText(currentSong.getSongName());
+        TextView songTextView = (TextView) listItemView.findViewById(R.id.song_name_text_view);
+        songTextView.setText(currentSong.getSongName());
 
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
-        defaultTextView.setText(currentSong.getArtistName());
+        TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist_text_view);
+        artistTextView.setText(currentSong.getArtistName());
 
 
         return listItemView;
