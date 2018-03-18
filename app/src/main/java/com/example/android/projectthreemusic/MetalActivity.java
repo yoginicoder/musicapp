@@ -7,8 +7,12 @@ package com.example.android.projectthreemusic;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+
+
+
 
 public class MetalActivity extends AppCompatActivity {
 
