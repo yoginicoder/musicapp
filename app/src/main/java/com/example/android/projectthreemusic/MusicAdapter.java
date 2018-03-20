@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.widget.ArrayAdapter;
 import android.view.ViewGroup;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
