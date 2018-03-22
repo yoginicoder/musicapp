@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * Created by gp on 14/03/2018.
  */
-
+//note to self: this is a note
 public class MusicAdapter extends ArrayAdapter<Music> {
 
     public MusicAdapter(Activity context, ArrayList<Music> songs) {
