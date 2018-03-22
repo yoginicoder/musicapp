@@ -6,8 +6,9 @@
     android:background="@color/black_background">
 
 
-    <ImageView
+    <ImageButton
         android:id="@+id/play_butt"
+        android:onClick="playNow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
