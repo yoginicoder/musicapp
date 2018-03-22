@@ -21,7 +21,7 @@
             android:textColor="#ff008a"
             android:textSize="26sp"
             android:textStyle="bold|italic"
-            tools:text="Now Playing"/>
+            android:text="Now Playing"/>
 
 
         <TextView
