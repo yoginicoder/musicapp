@@ -4,22 +4,24 @@ package com.example.android.projectthreemusic;
  * Created by gp on 15/03/2018.
  */
 
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 
 public class MetalActivity extends AppCompatActivity {
-
-
-
 
 
     @Override
@@ -28,7 +30,7 @@ public class MetalActivity extends AppCompatActivity {
         setContentView(R.layout.genre_list);
 
 
-        ArrayList<Music> songs = new ArrayList<Music>();
+        final ArrayList<Music> songs = new ArrayList<>();
 
         songs.add(new Music("Iron Maiden", "Fear of the Dark"));
         songs.add(new Music("Pantera", "Cemetery Gates"));
@@ -39,19 +41,20 @@ public class MetalActivity extends AppCompatActivity {
 
         MusicAdapter adapter = new MusicAdapter(this, songs);
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 
-        /**
-         * This code crashes the app
-         */
-        ImageButton playVar = (ImageButton) findViewById(R.id.play_butt);
-        playVar.setOnClickListener(new View.OnClickListener() {
-
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View view) {
-                Toast.makeText(MetalActivity.this, "Button Clicked", Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Music song = songs.get(position);
+
+                TextView currentSongView = findViewById(R.id.current_song_name_text_view);
+                currentSongView.setText(song.getSongName());
+
+                TextView currentArtistView = findViewById(R.id.current_artist_text_view);
+                currentArtistView.setText(song.getArtistName());
             }
         });
 
