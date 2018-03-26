@@ -8,6 +8,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
@@ -47,21 +48,24 @@ public class MetalActivity extends AppCompatActivity {
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Music song = songs.get(position);
-
-                TextView currentSongView = findViewById(R.id.current_song_name_text_view);
-                currentSongView.setText(song.getSongName());
-
-                TextView currentArtistView = findViewById(R.id.current_artist_text_view);
-                currentArtistView.setText(song.getArtistName());
+                Log.v("Hello!", "Y u no see me?");
             }
         });
 
 
 /**
  * Leave these two braces here
+ *
+ Music song = songs.get(position);
+
+ TextView currentSongView = findViewById(R.id.current_song_name_text_view);
+ currentSongView.setText(song.getSongName());
+
+ TextView currentArtistView = findViewById(R.id.current_artist_text_view);
+ currentArtistView.setText(song.getArtistName());
  */
     }
 

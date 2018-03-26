@@ -16,8 +16,6 @@ package com.example.android.projectthreemusic;
  * limitations under the License.
  */
 
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the numbers category
-        ImageView metalVar = (ImageView) findViewById(R.id.metal);
+        ImageButton metalVar = findViewById(R.id.metal);
 
         // Set a click listener on that View
         metalVar.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the family category
-        ImageView rockVar = (ImageView) findViewById(R.id.rock);
+        ImageButton rockVar =  findViewById(R.id.rock);
 
         // Set a click listener on that View
         rockVar.setOnClickListener(new View.OnClickListener() {
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the colors category
-        ImageView punkVar = (ImageView) findViewById(R.id.punk);
+        ImageButton punkVar = findViewById(R.id.punk);
 
         // Set a click listener on that View
         punkVar.setOnClickListener(new View.OnClickListener() {
