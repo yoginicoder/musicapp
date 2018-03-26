@@ -47,6 +47,10 @@ public class MetalActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
 
+        /**
+         * log for onclick, doesn't work
+         */
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
