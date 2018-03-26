@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -44,6 +44,7 @@ public class MetalActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.list);
 
         listView.setAdapter(adapter);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

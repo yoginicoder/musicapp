@@ -23,6 +23,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the numbers category
-        ImageButton metalVar = (ImageButton) findViewById(R.id.metal);
+        ImageView metalVar = (ImageView) findViewById(R.id.metal);
 
         // Set a click listener on that View
         metalVar.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the family category
-        ImageButton rockVar = (ImageButton) findViewById(R.id.rock);
+        ImageView rockVar = (ImageView) findViewById(R.id.rock);
 
         // Set a click listener on that View
         rockVar.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the colors category
-        ImageButton punkVar = (ImageButton) findViewById(R.id.punk);
+        ImageView punkVar = (ImageView) findViewById(R.id.punk);
 
         // Set a click listener on that View
         punkVar.setOnClickListener(new View.OnClickListener() {
