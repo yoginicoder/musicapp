@@ -56,7 +56,13 @@ public class MetalActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.v("Hello!", "Y u no see me?");
+                Music song = songs.get(position);
+
+                TextView currentSongView = findViewById(R.id.current_song_name_text_view);
+                currentSongView.setText(song.getSongName());
+
+                TextView currentArtistView = findViewById(R.id.current_artist_text_view);
+                currentArtistView.setText(song.getArtistName());
             }
         });
 
@@ -66,13 +72,8 @@ public class MetalActivity extends AppCompatActivity {
 /**
  * Leave these two braces here
  *
- Music song = songs.get(position);
 
- TextView currentSongView = findViewById(R.id.current_song_name_text_view);
- currentSongView.setText(song.getSongName());
 
- TextView currentArtistView = findViewById(R.id.current_artist_text_view);
- currentArtistView.setText(song.getArtistName());
  */
     }
 
