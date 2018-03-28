@@ -11,10 +11,12 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:background="@color/black_background"
-    android:descendantFocusability="blocksDescendants">
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="true">
 
 
     <ImageButton
+        android:clickable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
